@@ -1,0 +1,70 @@
+### node25D
+# mode0, mode1, tex0
+# mode0 - orientation
+#  0 - floor
+#  1 - left wall
+#  2 - right wall
+
+_ @ada;
+
+mode0 p0;
+mode1 p1;
+tex0 p2;
+
+
+#tex0 r1;
+
+sn0 0;
+
+if (r0) {
+# new.ui.shader.node3(sn0, 0,0,0.1, 300,300, 70014,29391); # bg91
+# tex0:=node.value.g(u0, sn0,0);
+# new.ui.shader.node3(sn0, 0,0,0.1, 300,300, 70014,29392); # dota.buff.portal92
+# tex0:=node.value.g(u0, sn0,0);
+};
+
+t+=dt;
+
+draw.fid(A.node25D.draw);
+
+### node25D.draw
+
+mode0 p0;
+
+_ @70910;
+
+draw0.texture {
+ # tex, vsh,fsh, x0,y0,x1,y1,x2,y2,x3,y3
+ tex _0;
+ vsh _1;
+ fsh _2;
+ shader.use(u0, vsh,fsh);
+ shader.uniform.texture(u0, 0, tex, 0);
+ node.ex.gl.point4tex4(u0, 5, _3,_4,_5,_6,_7,_8,_9,_10, 0,0, 1,0, 0,1, 1,1);
+};
+
+
+#tex0 r1;
+tex0 p2;
+
+x 0;
+y 0;
+
+h:=h/2;
+
+if (mode0==0) {
+ #draw0.texture(tex0, 70972,70976, x+sin(t)*100,y, x+w,y, x,y+h, x+w,y+h);
+ draw0.texture(tex0, 70972,70976, x+w/2,y, x+w,y+h/2, x,y+h/2, x+w/2,y+h);
+};
+
+if (mode0==1) {
+ y=h/2;
+ h0 h*1.5;
+ draw0.texture(tex0, 70972,70976, x,y+h0-h/2, x+w/2,y+h0, x,y, x+w/2,y+h/2);
+};
+
+if (mode0==2) {
+ y=h/2;
+ h0 h*1.5;
+ draw0.texture(tex0, 70972,70976, x+w,y+h0-h/2, x+w/2,y+h0, x+w,y, x+w/2,y+h/2);
+};
