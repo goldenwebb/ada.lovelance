@@ -1,6 +1,6 @@
 # ada.lovelance game
 
-! [ ada.lovelance game](assets/9215.png)
+![ada.lovelance game](assets/9215.png)
 
 ## Run on device
 
