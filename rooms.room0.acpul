@@ -64,9 +64,13 @@ if (w*h*(floor0==0)) {
  tex0=node.value.g(u0, sn0,0);
  new.node25D(wall1, 0,0,1, w,h, 2, 0, tex0);
 
- # BENDER
 
- new.ui.shader.node3(bender0, bender.x,bender.y,1, bender.w0,bender.h0, 70014,29154); # dota.bender
+ # HERO
+
+ hero0 bender0;
+ w0 100;
+ h0 100;
+ new.node.common0(hero0, 0,0,1, w0,h0, NNN(ada.hero), 0);
 
  # CUBE
 
@@ -120,3 +124,34 @@ draw.fid(A.rooms.room.draw);
 
 
 
+### ada.hero
+
+_ @help.inc1;
+
+hero0 0;
+
+if (r0) {
+ HL.olymp.hero1 10009010;
+ hero0:=node.new.this.ex4(r0, HL.olymp.hero1, 0,0,1, 0);
+ # BENDER
+ bender0 0;
+ bender.x 0-50;
+ bender.y 0-50;
+ bender.w0 100*2;
+ bender.h0 100*2;
+# new.ui.shader.node3(bender0, bender.x,bender.y,1, bender.w0,bender.h0, 70014,29154); # dota.bender
+};
+
+# BIRD 7340;
+# node.new.this.ex(r0, BIRD, 0);
+
+draw.fid(ada.hero.draw);
+
+#x:=sin(t)*100;
+
+t+=dt;
+
+### ada.hero.draw
+
+color(u0, 0.5,0.5,0,0);
+rect(u0, 2, 0,0,w,h);

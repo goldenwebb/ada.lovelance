@@ -28,7 +28,8 @@ if (w*h*(floor0==0)) {
  # FLOOR
 
 # new.ui.shader.node3(sn0, 0,0,0.1, 300,300, 70014,29391); # bg91
- new.ui.shader.node3(sn0, 0,0,0.1, 100,100, 70014,29397); # spirit397
+# new.ui.shader.node3(sn0, 0,0,0.1, 100,100, 70014,29397); # spirit397
+ new.ui.shader.node3(sn0, 0,0,0.1, 100,100, 70014,29203); # mag.planets203
 # shader.set.uniform.v(sn0, A.flip_x, 0);
  flip.x=0;
  flip.y=0;
@@ -51,7 +52,8 @@ if (w*h*(floor0==0)) {
 
  # LEFT
 
- shader0=if(opt1,29399,29398);
+# shader0=if(opt1,29399,29398);
+ shader0=29400;
 
  if (left) {
 # new.ui.shader.node3(sn0, 0,0,0.1, 300,300, 70014,29378); # dota.portal378
@@ -79,7 +81,7 @@ if (w*h*(floor0==0)) {
 #  q 1/4;
 #  q 1/2;
   q 2;
-  new.ui.shader.node3(skeleton0, 0,0,2*q, 100/q,100/q, 70014,29409); # 
+#  new.ui.shader.node3(skeleton0, 0,0,2*q, 100/q,100/q, 70014,29409); # 
  };
 };
 
