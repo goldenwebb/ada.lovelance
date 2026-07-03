@@ -6,7 +6,7 @@
 
 1. Install AnimationCPU on your iPhone or iPad
 2. Run AnimationCPU and tap the yellow **Bootloader** button in the left corner at startup.
-3. Insert [ada-lovelance.zip](ada-lovelance.zip) in the url text field
+3. Insert [https://github.com/goldenwebb/ada.lovelance/releases/download/v0.1.0/ada-release-0.1.zip](https://github.com/goldenwebb/ada.lovelance/releases/download/v0.1.0/ada-release-0.1.zip) in the url text field
 4. Press Connect
 
 ## Development
